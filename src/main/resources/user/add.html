@@ -2,12 +2,25 @@
 
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-<head>
-    <title>Good Thymes Title</title>
-    <meta charset="UTF-8"/>
+<head th:replace="fragments :: header"></head>
 
-</head>
 <body>
+    <form th:action="@{/user}" method="post">
 
+        <div class="container">
+            <label ><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" th:value="${username}" required>
+            <label><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" th:value="${email}"required>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <label><b>Verify Password</b></label>
+            <input type="password" placeholder="Enter Password Again" name="verify" required>
+            <p th:text="${error}"></p>
+            <button type="submit" value="Sign Up">Login</button>
+
+            </div>
+    </form>
 </body>
 </html>
