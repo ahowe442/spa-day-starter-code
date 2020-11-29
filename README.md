@@ -7,5 +7,5 @@ This application uses Java and Thymeleaf to
 This application also allows users to sign up for the spa day app and checks for valid information at login. 
 
 <kbd>
-  <img src="">
+  <img src="https://github.com/ahowe442/spa-day-starter-code/blob/starter-master/src/main/resources/static/images/Spa%20Day%20Java.png?raw=true">
 </kbd>
